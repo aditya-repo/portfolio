@@ -1,101 +1,228 @@
 import Image from "next/image";
+import Link from "next/link";
+import ProfilePic from "../../public/photo.jpeg";
+import ProjectPic from "../../public/project.webp";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faHtml5, faJava, faReact } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope, faExternalLink, faLink, faNewspaper } from '@fortawesome/free-solid-svg-icons';
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="content">
+      <div className="py-10 px-10 md:py-20 ">
+        <div className="text-3xl tracking-normal text-[#3CCF91] font-bold">Hey there!, I'm-</div>
+        <div className="md:text-9xl font-bold pb-8 pt-4 text-5xl">Aditya Raj.</div>
+        <div className="md:text-3xl text-xl tracking-normal font-bold"><span className="text-white">Software Engineer.</span> <span className="text-gray-400">A self-taught developer with an
+          interest in Computer Science.</span></div>
+        <div className="py-4">
+          <div className="md:text-2xl font-light tracking-wide text-gray-400">🚀 Currently specializing in Frontend (React / Next.js)</div>
+          <div className="md:text-2xl font-ligh text-gray-400 tracking-wide">⚡ Frontend Engineer at <span className="text-[#3CCF91]">GGL</span></div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        <div className="flex gap-4 mt-6">
+          <Link href="https://github.com/aditya-repo" target="_blank">
+            <div className="flex bg-gray-900 py-2 px-3 rounded-md items-center">
+              <FontAwesomeIcon icon={faGithub} className="w-4 h-4 mr-2.5 text-[#3CCF91]" />
+              <div className="font-bold">Github</div>
+            </div>
+          </Link>
+          <Link href="https://www.linkedin.com/in/aditya-raj-1/" target="_blank">
+            <div className="flex bg-gray-900 py-2 px-3 rounded-md items-center">
+              <FontAwesomeIcon icon={faLinkedin} className="w-4 h-4 mr-2.5 text-[#3CCF91]" />
+              <div className="font-bold">LinkedIn</div>
+            </div>
+          </Link>
+          <Link href="https://www.linkedin.com/in/aditya-raj-1/" target="_blank">
+            <div className="flex bg-gray-900 py-2 px-3 rounded-md items-center">
+              <FontAwesomeIcon icon={faEnvelope} className="w-4 h-4 mr-2.5 text-[#3CCF91]" />
+              <div className="font-bold">Email</div>
+            </div>
+          </Link>
+        </div>
+      </div>
+      <div className="pb-0 md:pb-20 px-10">
+        <div className="flex justify-between md:flex-row flex-col-reverse items-center">
+          <div className="md:w-1/2">
+            <div className="font-bold text-3xl pb-4 md:text-left text-center"><span className="hidden md:inline">⚡ </span>About Me</div>
+            <p className="text-gray-400">Hey! I'm Abdul Rahman, I've been close to a computer since an early age, and been passionate about it ever since.</p>
+            <p className="text-gray-400 mt-6">I really liked to build stuff using no-code tools
+              back in 2010, and from that, I explored how to code myself, fast-forward to today, I do programming in various languages and technologies, and had the privilege to worked in a Recruitment Company
+              and a SaaS Company
+              I'm interested in building something awesome with code and automate tasks with code, currently focused on Web & Mobile Development,
+              Open Source
+              and Competitive Programming</p>
+            <p className="text-gray-400 mt-6">When I'm not coding I play games with my friends, watch some show on Netflix, or if the weather's good, play basketball! 🏀</p>
+          </div>
+          <div className="w-1/2 flex justify-center my-8">
+            <Image src={ProfilePic} alt="Profile Picture" className="rounded-full" />
+          </div>
+        </div>
+      </div>
+
+      <div className="pt-20 pb-10 px-4">
+        <div className="px-2">
+          <div className="font-bold md:text-3xl text-xl">All Creative Works.</div>
+          <p className="text-gray-400 text-xl">Here's some of my projects that I have worked on.</p>
+          <p className="text-[#3CCF91] text-xl mb-5">Explore more →</p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="p-2">
+            <div className="rounded">
+              <Image src={ProjectPic} alt="Profile Picture" className="rounded-t-lg w-[100%]" />
+            </div>
+            <div className="p-3 bg-gray-900 rounded-b-lg">
+              <div className="flex justify-between items-center">
+
+                <div className="font-bold text-2xl">@Creative Home</div>
+                <div className="font-bold text-2xl"><FontAwesomeIcon icon={faExternalLink} className="w-4 h-4" /></div>
+              </div>
+              <div className="tech-stack">
+                <div className="flex gap-2 py-3 mb-3 border-b border-gray-600">
+                  <div className="bg-yellow-400 bg-opacity-25 text-yellow-400 rounded-lg font-bold px-2 flex items-center gap-1"><FontAwesomeIcon icon={faReact} className="w-3 h-3" /> React</div>
+                  <div className="bg-gray-300 bg-opacity-25 text-yellow-600 rounded-lg font-bold px-2 flex items-center gap-1"><FontAwesomeIcon icon={faHtml5} className="w-3 h-3" /> JavaScript</div>
+                </div>
+                <div className="tracking-wide text-gray-400">A website that provides roadmap for various fields in Programming and help people learn to code for free.</div>
+              </div>
+            </div>
+          </div>
+          <div className="p-2">
+            <div className="rounded">
+              <Image src={ProjectPic} alt="Profile Picture" className="rounded-t-lg w-[100%]" />
+            </div>
+            <div className="p-3 bg-gray-900 rounded-b-lg">
+              <div className="flex justify-between items-center">
+
+                <div className="font-bold text-2xl">@Creative Home</div>
+                <div className="font-bold text-2xl"><FontAwesomeIcon icon={faExternalLink} className="w-4 h-4" /></div>
+              </div>
+              <div className="tech-stack">
+                <div className="flex gap-2 py-3 mb-3 border-b border-gray-600">
+                  <div className="bg-yellow-400 bg-opacity-25 text-yellow-400 rounded-lg font-bold px-2 flex items-center gap-1"><FontAwesomeIcon icon={faReact} className="w-3 h-3" /> React</div>
+                  <div className="bg-gray-300 bg-opacity-25 text-yellow-600 rounded-lg font-bold px-2 flex items-center gap-1"><FontAwesomeIcon icon={faHtml5} className="w-3 h-3" /> JavaScript</div>
+                </div>
+                <div className="tracking-wide text-gray-400">A website that provides roadmap for various fields in Programming and help people learn to code for free.</div>
+              </div>
+            </div>
+          </div>
+          <div className="p-2">
+            <div className="rounded">
+              <Image src={ProjectPic} alt="Profile Picture" className="rounded-t-lg w-[100%]" />
+            </div>
+            <div className="p-3 bg-gray-900 rounded-b-lg">
+              <div className="flex justify-between items-center">
+
+                <div className="font-bold text-2xl">@Creative Home</div>
+                <div className="font-bold text-2xl"><FontAwesomeIcon icon={faExternalLink} className="w-4 h-4" /></div>
+              </div>
+              <div className="tech-stack">
+                <div className="flex gap-2 py-3 mb-3 border-b border-gray-600">
+                  <div className="bg-yellow-400 bg-opacity-25 text-yellow-400 rounded-lg font-bold px-2 flex items-center gap-1"><FontAwesomeIcon icon={faReact} className="w-3 h-3" /> React</div>
+                  <div className="bg-gray-300 bg-opacity-25 text-yellow-600 rounded-lg font-bold px-2 flex items-center gap-1"><FontAwesomeIcon icon={faHtml5} className="w-3 h-3" /> JavaScript</div>
+                </div>
+                <div className="tracking-wide text-gray-400">A website that provides roadmap for various fields in Programming and help people learn to code for free.</div>
+              </div>
+            </div>
+          </div>
+          <div className="p-2">
+            <div className="rounded">
+              <Image src={ProjectPic} alt="Profile Picture" className="rounded-t-lg w-[100%]" />
+            </div>
+            <div className="p-3 bg-gray-900 rounded-b-lg">
+              <div className="flex justify-between items-center">
+
+                <div className="font-bold text-2xl">@Creative Home</div>
+                <div className="font-bold text-2xl"><FontAwesomeIcon icon={faExternalLink} className="w-4 h-4" /></div>
+              </div>
+              <div className="tech-stack">
+                <div className="flex gap-2 py-3 mb-3 border-b border-gray-600">
+                  <div className="bg-yellow-400 bg-opacity-25 text-yellow-400 rounded-lg font-bold px-2 flex items-center gap-1"><FontAwesomeIcon icon={faReact} className="w-3 h-3" /> React</div>
+                  <div className="bg-gray-300 bg-opacity-25 text-yellow-600 rounded-lg font-bold px-2 flex items-center gap-1"><FontAwesomeIcon icon={faHtml5} className="w-3 h-3" /> JavaScript</div>
+                </div>
+                <div className="tracking-wide text-gray-400">A website that provides roadmap for various fields in Programming and help people learn to code for free.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div className="py-10 px-4">
+        <div className="flex justify-between items-center mb-3 px-2">
+          <div className="font-bold text-2xl md:text-3xl flex gap-2 items-center"> <FontAwesomeIcon icon={faNewspaper} className="w-6 h-6 mr-2" />Latest Article</div>
+          <p className="text-[#3CCF91] md:text-lg text-sm">View all articles →</p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="p-5 bg-gray-800 rounded-lg">
+            <div className="font-bold text-2xl">2024 Retrospective</div>
+            <div className="tech-stack">
+              <div className="flex gap-2 py-3 mb-3 border-b border-gray-600 items-center">
+                <div className="text-gray-500">July 18 2022 • </div>
+                <div className="text-gray-500 text-sm">2 min read</div>
+              </div>
+              <div className="tracking-wide text-gray-400">A website that provides roadmap for various fields in Programming and help people learn to code for free.</div>
+            </div>
+          </div>
+          <div className="p-5 bg-gray-800 rounded-lg">
+            <div className="font-bold text-2xl">2024 Retrospective</div>
+            <div className="tech-stack">
+              <div className="flex gap-2 py-3 mb-3 border-b border-gray-600 items-center">
+                <div className="text-gray-500">July 18 2022 • </div>
+                <div className="text-gray-500 text-sm">2 min read</div>
+              </div>
+              <div className="tracking-wide text-gray-400">A website that provides roadmap for various fields in Programming and help people learn to code for free.</div>
+            </div>
+          </div>
+          <div className="p-5 bg-gray-800 rounded-lg">
+            <div className="font-bold text-2xl">2024 Retrospective</div>
+            <div className="tech-stack">
+              <div className="flex gap-2 py-3 mb-3 border-b border-gray-600 items-center">
+                <div className="text-gray-500">July 18 2022 • </div>
+                <div className="text-gray-500 text-sm">2 min read</div>
+              </div>
+              <div className="tracking-wide text-gray-400">A website that provides roadmap for various fields in Programming and help people learn to code for free.</div>
+            </div>
+          </div>
+          <div className="p-5 bg-gray-800 rounded-lg">
+            <div className="font-bold text-2xl">2024 Retrospective</div>
+            <div className="tech-stack">
+              <div className="flex gap-2 py-3 mb-3 border-b border-gray-600 items-center">
+                <div className="text-gray-500">July 18 2022 • </div>
+                <div className="text-gray-500 text-sm">2 min read</div>
+              </div>
+              <div className="tracking-wide text-gray-400">A website that provides roadmap for various fields in Programming and help people learn to code for free.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="mt-0 md:mt-10 pt-10 px-4 flex flex-col items-center">
+        <div className="font-bold text-6xl text-center mt-3">Keep In Touch.</div>
+        <div className="flex flex-col items-center py-6 max-w-[480px]">
+          <div className="text-center">I'm currently specializing in Front-end Development. Feel free to get in touch and talk more about your projects.</div>
+          <div className="flex gap-4 mt-6">
+            <Link href="https://github.com/aditya-repo" target="_blank">
+              <div className="flex bg-gray-900 py-2 px-3 rounded-md items-center">
+                <FontAwesomeIcon icon={faGithub} className="w-4 h-4 mr-2.5 text-[#3CCF91]" />
+                <div className="font-bold">Github</div>
+              </div>
+            </Link>
+            <Link href="https://www.linkedin.com/in/aditya-raj-1/" target="_blank">
+              <div className="flex bg-gray-900 py-2 px-3 rounded-md items-center">
+                <FontAwesomeIcon icon={faLinkedin} className="w-4 h-4 mr-2.5 text-[#3CCF91]" />
+                <div className="font-bold">LinkedIn</div>
+              </div>
+            </Link>
+            <Link href="https://www.linkedin.com/in/aditya-raj-1/" target="_blank">
+              <div className="flex bg-gray-900 py-2 px-3 rounded-md items-center">
+                <FontAwesomeIcon icon={faEnvelope} className="w-4 h-4 mr-2.5 text-[#3CCF91]" />
+                <div className="font-bold">Email</div>
+              </div>
+            </Link>
+          </div>
+          <div className="pt-20 text-center">Designed and Developed by Abdul Rahman.
+            Built with Next.js & Chakra UI. Hosted on Vercel.</div>
+        </div>
+      </div>
     </div>
   );
 }
