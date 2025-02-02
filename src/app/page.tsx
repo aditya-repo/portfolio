@@ -6,8 +6,37 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faHtml5, faJava, faReact } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faExternalLink, faLink, faNewspaper } from '@fortawesome/free-solid-svg-icons';
+import Projects from "./_project";
 
 export default function Home() {
+  const Iprojects = [
+      {
+          title: "Portfolio",
+          description: "A website that provides roadmap for various fields in Programming and help people learn to code for free.",
+          image: "",
+          link: "https://github.com/aditya-repo/portfolio"
+      },
+      {
+          title: "Portfolio",
+          description: "A website that provides roadmap for various fields in Programming and help people learn to code for free.",
+          image: "",
+          link: "https://github.com/aditya-repo/portfolio"
+      },
+      {
+          title: "Portfolio",
+          description: "A website that provides roadmap for various fields in Programming and help people learn to code for free.",
+          image: "",
+          link: "https://github.com/aditya-repo/portfolio"
+      },
+      {
+          title: "Portfolio",
+          description: "A website that provides roadmap for various fields in Programming and help people learn to code for free.",
+          image: "",
+          link: "https://github.com/aditya-repo/portfolio"
+      }
+  ]
+
+
   return (
     <div className="content">
       <div className="py-10 px-10 md:py-20 ">
@@ -60,88 +89,14 @@ export default function Home() {
       </div>
 
       <div className="pt-20 pb-10 px-4">
-        <div className="px-2">
+        <div className="px-2 mb-3">
           <div className="font-bold md:text-3xl text-xl">All Creative Works.</div>
           <p className="text-gray-400 text-xl">Here's some of my projects that I have worked on.</p>
-          <p className="text-[#3CCF91] text-xl mb-5">Explore more →</p>
+          <Link href="/projects" className="text-[#3CCF91] text-xl">View all projects →</Link>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="p-2">
-            <div className="rounded">
-              <Image src={ProjectPic} alt="Profile Picture" className="rounded-t-lg w-[100%]" />
-            </div>
-            <div className="p-3 bg-gray-900 rounded-b-lg">
-              <div className="flex justify-between items-center">
-
-                <div className="font-bold text-2xl">@Creative Home</div>
-                <div className="font-bold text-2xl"><FontAwesomeIcon icon={faExternalLink} className="w-4 h-4" /></div>
-              </div>
-              <div className="tech-stack">
-                <div className="flex gap-2 py-3 mb-3 border-b border-gray-600">
-                  <div className="bg-yellow-400 bg-opacity-25 text-yellow-400 rounded-lg font-bold px-2 flex items-center gap-1"><FontAwesomeIcon icon={faReact} className="w-3 h-3" /> React</div>
-                  <div className="bg-gray-300 bg-opacity-25 text-yellow-600 rounded-lg font-bold px-2 flex items-center gap-1"><FontAwesomeIcon icon={faHtml5} className="w-3 h-3" /> JavaScript</div>
-                </div>
-                <div className="tracking-wide text-gray-400">A website that provides roadmap for various fields in Programming and help people learn to code for free.</div>
-              </div>
-            </div>
-          </div>
-          <div className="p-2">
-            <div className="rounded">
-              <Image src={ProjectPic} alt="Profile Picture" className="rounded-t-lg w-[100%]" />
-            </div>
-            <div className="p-3 bg-gray-900 rounded-b-lg">
-              <div className="flex justify-between items-center">
-
-                <div className="font-bold text-2xl">@Creative Home</div>
-                <div className="font-bold text-2xl"><FontAwesomeIcon icon={faExternalLink} className="w-4 h-4" /></div>
-              </div>
-              <div className="tech-stack">
-                <div className="flex gap-2 py-3 mb-3 border-b border-gray-600">
-                  <div className="bg-yellow-400 bg-opacity-25 text-yellow-400 rounded-lg font-bold px-2 flex items-center gap-1"><FontAwesomeIcon icon={faReact} className="w-3 h-3" /> React</div>
-                  <div className="bg-gray-300 bg-opacity-25 text-yellow-600 rounded-lg font-bold px-2 flex items-center gap-1"><FontAwesomeIcon icon={faHtml5} className="w-3 h-3" /> JavaScript</div>
-                </div>
-                <div className="tracking-wide text-gray-400">A website that provides roadmap for various fields in Programming and help people learn to code for free.</div>
-              </div>
-            </div>
-          </div>
-          <div className="p-2">
-            <div className="rounded">
-              <Image src={ProjectPic} alt="Profile Picture" className="rounded-t-lg w-[100%]" />
-            </div>
-            <div className="p-3 bg-gray-900 rounded-b-lg">
-              <div className="flex justify-between items-center">
-
-                <div className="font-bold text-2xl">@Creative Home</div>
-                <div className="font-bold text-2xl"><FontAwesomeIcon icon={faExternalLink} className="w-4 h-4" /></div>
-              </div>
-              <div className="tech-stack">
-                <div className="flex gap-2 py-3 mb-3 border-b border-gray-600">
-                  <div className="bg-yellow-400 bg-opacity-25 text-yellow-400 rounded-lg font-bold px-2 flex items-center gap-1"><FontAwesomeIcon icon={faReact} className="w-3 h-3" /> React</div>
-                  <div className="bg-gray-300 bg-opacity-25 text-yellow-600 rounded-lg font-bold px-2 flex items-center gap-1"><FontAwesomeIcon icon={faHtml5} className="w-3 h-3" /> JavaScript</div>
-                </div>
-                <div className="tracking-wide text-gray-400">A website that provides roadmap for various fields in Programming and help people learn to code for free.</div>
-              </div>
-            </div>
-          </div>
-          <div className="p-2">
-            <div className="rounded">
-              <Image src={ProjectPic} alt="Profile Picture" className="rounded-t-lg w-[100%]" />
-            </div>
-            <div className="p-3 bg-gray-900 rounded-b-lg">
-              <div className="flex justify-between items-center">
-
-                <div className="font-bold text-2xl">@Creative Home</div>
-                <div className="font-bold text-2xl"><FontAwesomeIcon icon={faExternalLink} className="w-4 h-4" /></div>
-              </div>
-              <div className="tech-stack">
-                <div className="flex gap-2 py-3 mb-3 border-b border-gray-600">
-                  <div className="bg-yellow-400 bg-opacity-25 text-yellow-400 rounded-lg font-bold px-2 flex items-center gap-1"><FontAwesomeIcon icon={faReact} className="w-3 h-3" /> React</div>
-                  <div className="bg-gray-300 bg-opacity-25 text-yellow-600 rounded-lg font-bold px-2 flex items-center gap-1"><FontAwesomeIcon icon={faHtml5} className="w-3 h-3" /> JavaScript</div>
-                </div>
-                <div className="tracking-wide text-gray-400">A website that provides roadmap for various fields in Programming and help people learn to code for free.</div>
-              </div>
-            </div>
-          </div>
+          <Projects item={Iprojects[0]} />
+          <Projects item={Iprojects[1]} />
         </div>
       </div>
 
