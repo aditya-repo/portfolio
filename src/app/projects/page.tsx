@@ -42,7 +42,7 @@ export default function About() {
     ]
     return (
         <div className="py-10">
-            <h1 className="text-6xl font-bold pt-16 pb-6">About</h1>
+            <h1 className="text-6xl font-bold pt-16 pb-6">Projects</h1>
             <p>I love building projects and practice my engineering skills, here's an archive of things that I've worked on.</p>
             <div className="flex items-center"><input type="text" placeholder="Search" className="bg-transparent border border-gray-300 p-1 pl-4 my-3 w-[300px] outline-none rounded-l-lg border-r-0" /><div className="bg-transparent p-2 rounded-r-lg border border-l-0"><FontAwesomeIcon icon={faMagnifyingGlass} className="w-[22px] h-[16px] bg-transparent" /></div></div>
             <div className="h-[0.25px] border-b-[0.1px] border-gray-800 text-white mt-1"></div>
