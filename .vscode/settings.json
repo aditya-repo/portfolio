@@ -12,7 +12,7 @@
         // "**/public": true,
         "package-lock.json": true,
         // "tailwind.config.ts": true,
-        "README.md": true,
+        // "README.md": true,
         ".next": true,
         "next-env.d.ts": true,
         "next.config.ts": true,
