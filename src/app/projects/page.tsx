@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Projects from "../_project";
 import { useEffect, useState } from "react";
 
-type Iprojects = {
+export type Iprojects = {
     title: string;
     description: string;
     image: string;

@@ -12,6 +12,13 @@ interface Section {
   images?: { src: string; alt?: string }[];
 }
 
+
+export interface ILink {
+  name: string
+  link: string
+}
+
+
 interface ProjectData {
   title: string;
   mainImage: string;

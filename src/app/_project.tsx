@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { IProject } from "./projects/page";
+import { Iprojects } from "./projects/page";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faExternalLink, faFaceDizzy } from "@fortawesome/free-solid-svg-icons";
 import ProjectPic from "../../public/project.webp";
@@ -39,7 +39,7 @@ const Tag = ({ name, bg, icon, text }: TagProps) => {
 
 const FinalTag = DynamicTag(Tag);
 
-export default function Projects({ item }: { item: IProject }) {
+export default function Projects({ item }: { item: Iprojects }) {
     return (
         <div className="p-2">
           <div className="rounded">

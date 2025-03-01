@@ -1,7 +1,7 @@
 'use client'
 import { useState } from "react";
 
-export default function Header({ children }: { children: React.ReactNode }) {
+export default function Header() {
 
   const [isOpen, setIsOpen] = useState<boolean>(false);
 

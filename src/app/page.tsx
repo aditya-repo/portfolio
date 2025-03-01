@@ -2,9 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import ProfilePic from "../../public/photo.jpeg"; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faHtml5, faJava, faReact } from '@fortawesome/free-brands-svg-icons';
+import { faGithub} from '@fortawesome/free-brands-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope, faExternalLink, faLink, faNewspaper } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope,  faNewspaper } from '@fortawesome/free-solid-svg-icons';
 import Projects from "./_project";
 
 export default function Home() {
