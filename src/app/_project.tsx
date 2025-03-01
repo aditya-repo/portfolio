@@ -1,13 +1,13 @@
 import Image from "next/image";
 import { Iprojects } from "./projects/page";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faExternalLink, faFaceDizzy } from "@fortawesome/free-solid-svg-icons";
+import { faExternalLink, faFaceDizzy, IconDefinition } from "@fortawesome/free-solid-svg-icons";
 import ProjectPic from "../../public/project.webp";
-import { faCss3Alt, faHtml5, faJs, faReact, faNodeJs } from "@fortawesome/free-brands-svg-icons";
+import { faCss3Alt, faHtml5, faJs, faReact } from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
 
-type TagConfig = { bg: string, text: string, icon?: any }
-type TagProps = { name: string, bg: string, icon?: any, text: string }
+type TagConfig = { bg: string, text: string, icon: IconDefinition }
+type TagProps = { name: string, bg: string, icon: IconDefinition, text: string }
 type TagDictonary = {
   [name: string]: TagConfig
 }

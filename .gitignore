@@ -20,6 +20,8 @@
 # production
 /build
 
+page2.tsx
+
 # misc
 .DS_Store
 *.pem

@@ -55,7 +55,7 @@ export default function About() {
     return (
         <div className="py-10">
             <h1 className="text-6xl font-bold pt-16 pb-6">Projects</h1>
-            <p>I love building projects and practice my engineering skills, here's an archive of things that I've worked on.</p>
+            <p>I love building projects and practice my engineering skills, here&apos;s an archive of things that I&apos;ve worked on.</p>
             <div className="flex items-center">
                 <input type="text" placeholder="Type project name..." onChange={searchProjects} className="bg-transparent border border-gray-300 py-2 pl-4 my-3 w-[300px] outline-none rounded-l-lg border-r-0 " />
                 <div className="bg-transparent p-2 rounded-r-lg border border-l-0">
