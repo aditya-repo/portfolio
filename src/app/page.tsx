@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import ProfilePic from "../../public/photo.jpeg";
-import ProjectPic from "../../public/project.webp";
+import ProfilePic from "../../public/photo.jpeg"; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faHtml5, faJava, faReact } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
@@ -45,8 +44,8 @@ export default function Home() {
         <div className="md:text-3xl text-xl tracking-normal font-bold"><span className="text-white">Software Engineer.</span> <span className="text-gray-400">A self-taught developer with an
           interest in Computer Science.</span></div>
         <div className="py-4">
-          <div className="md:text-2xl font-light tracking-wide text-gray-400">🚀 Currently specializing in Frontend (React / Next.js)</div>
-          <div className="md:text-2xl font-ligh text-gray-400 tracking-wide">⚡ Frontend Engineer at <span className="text-[#3CCF91]">GGL</span></div>
+          <div className="md:text-2xl font-light tracking-wide text-gray-400">🚀 Currently specializing in Full Stack (React / Next.js)</div>
+          <div className="md:text-2xl font-ligh text-gray-400 tracking-wide">⚡ Software Developer at <span className="text-[#3CCF91]">Iraade Digiworks Pvt Ltd</span></div>
         </div>
         <div className="flex gap-4 mt-6">
           <Link href="https://github.com/aditya-repo" target="_blank">
@@ -55,13 +54,13 @@ export default function Home() {
               <div className="font-bold">Github</div>
             </div>
           </Link>
-          <Link href="https://www.linkedin.com/in/aditya-raj-1/" target="_blank">
+          <Link href="https://www.linkedin.com/in/aditya-raj-388002346" target="_blank">
             <div className="flex bg-gray-900 py-2 px-3 rounded-md items-center">
               <FontAwesomeIcon icon={faLinkedin} className="w-4 h-4 mr-2.5 text-[#3CCF91]" />
               <div className="font-bold">LinkedIn</div>
             </div>
           </Link>
-          <Link href="https://www.linkedin.com/in/aditya-raj-1/" target="_blank">
+          <Link href="adityaraj6220@gmail.com" target="_blank">
             <div className="flex bg-gray-900 py-2 px-3 rounded-md items-center">
               <FontAwesomeIcon icon={faEnvelope} className="w-4 h-4 mr-2.5 text-[#3CCF91]" />
               <div className="font-bold">Email</div>
@@ -73,14 +72,14 @@ export default function Home() {
         <div className="flex justify-between md:flex-row flex-col-reverse items-center">
           <div className="md:w-1/2">
             <div className="font-bold text-3xl pb-4 md:text-left text-center"><span className="hidden md:inline">⚡ </span>About Me</div>
-            <p className="text-gray-400">Hey! I'm Abdul Rahman, I've been close to a computer since an early age, and been passionate about it ever since.</p>
+            <p className="text-gray-400">Hey! I'm Aditya Raj, I've been close to a computer since an early age, and been passionate about it ever since.</p>
             <p className="text-gray-400 mt-6">I really liked to build stuff using no-code tools
               back in 2010, and from that, I explored how to code myself, fast-forward to today, I do programming in various languages and technologies, and had the privilege to worked in a Recruitment Company
               and a SaaS Company
               I'm interested in building something awesome with code and automate tasks with code, currently focused on Web & Mobile Development,
               Open Source
               and Competitive Programming</p>
-            <p className="text-gray-400 mt-6">When I'm not coding I play games with my friends, watch some show on Netflix, or if the weather's good, play basketball! 🏀</p>
+            <p className="text-gray-400 mt-6">When I'm not coding I listen to music with my friends, watch some show on Netflix, or if the weather's good, play badminton! 🏀</p>
           </div>
           <div className="w-1/2 flex justify-center my-8">
             <Image src={ProfilePic} alt="Profile Picture" className="rounded-full" />
@@ -174,8 +173,6 @@ export default function Home() {
               </div>
             </Link>
           </div>
-          <div className="pt-20 text-center">Designed and Developed by Abdul Rahman.
-            Built with Next.js & Chakra UI. Hosted on Vercel.</div>
         </div>
       </div>
     </div>

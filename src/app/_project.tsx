@@ -1,26 +1,60 @@
 import Image from "next/image";
 import { IProject } from "./projects/page";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faExternalLink } from "@fortawesome/free-solid-svg-icons";
+import { faExternalLink, faFaceDizzy } from "@fortawesome/free-solid-svg-icons";
 import ProjectPic from "../../public/project.webp";
-import { faHtml5, faReact } from "@fortawesome/free-brands-svg-icons";
+import { faCss3Alt, faHtml5, faJs, faReact, faNodeJs } from "@fortawesome/free-brands-svg-icons";
+import Link from "next/link";
+
+type TagConfig = { bg: string, text: string, icon?: any }
+type TagProps = { name: string, bg: string, icon?: any, text: string }
+type TagDictonary = {
+  [name: string]: TagConfig
+}
+
+const tagConfig:TagDictonary = {
+  react: { bg: "bg-blue-100", text: "text-blue-400", icon: faReact },
+  javascript: { bg: "bg-yellow-100", text: "text-yellow-600", icon: faJs },
+  html: { bg: "bg-red-100", text: "text-red-600", icon: faHtml5 },
+  css: { bg: "bg-pink-100", text: "text-pink-600", icon: faCss3Alt },
+};
+
+const DynamicTag = (Component: React.FC<TagProps>)=> ({name}: {name: string}) => {
+  const tag = tagConfig[name.toLowerCase()];
+  if (!tag) return <Component name={name} bg={"bg-blue-100"} icon={faFaceDizzy} text={"bg-blue-100"} />
+
+  return (
+    <Component name={name} bg={tag.bg} icon={tag.icon} text={tag.text} />
+  )
+}
+
+const Tag = ({ name, bg, icon, text }: TagProps) => {
+  return (
+    <div className={`px-2.5 py-0.5 flex items-center gap-1 text-sm rounded-full bg-opacity-25 ${bg} ${text}`}>
+      <FontAwesomeIcon icon={icon} className="w-3 h-3" />
+      <span>{name}</span>
+    </div>
+  );
+}
+
+const FinalTag = DynamicTag(Tag);
 
 export default function Projects({ item }: { item: IProject }) {
     return (
         <div className="p-2">
           <div className="rounded">
-            <Image src={ProjectPic} alt="Profile Picture" className="rounded-t-lg w-[100%]" />
+            
+          <Link href={"/projects/5465"}><Image src={ProjectPic} alt="Profile Picture" className="rounded-t-lg w-[100%]" /></Link>
           </div>
           <div className="p-3 bg-gray-900 rounded-b-lg">
             <div className="flex justify-between items-center">
-
-              <div className="font-bold text-2xl">{item.title}</div>
-              <div className="font-bold text-2xl"><FontAwesomeIcon icon={faExternalLink} className="w-4 h-4" /></div>
+            <Link href={"/projects/5465"}>
+              <div className="font-bold text-2xl">{item.title}</div></Link>
+              <Link href={"https://aditya-repo.github.io/abstract/"}><div className="font-bold text-2xl"><FontAwesomeIcon icon={faExternalLink} className="w-4 h-4" /></div></Link>
             </div>
             <div className="tech-stack">
               <div className="flex gap-2 py-3 mb-3 border-b border-gray-600">
-                <div className="bg-yellow-400 bg-opacity-25 text-yellow-400 rounded-lg font-bold px-2 flex items-center gap-1"><FontAwesomeIcon icon={faReact} className="w-3 h-3" /> React</div>
-                <div className="bg-gray-300 bg-opacity-25 text-yellow-600 rounded-lg font-bold px-2 flex items-center gap-1"><FontAwesomeIcon icon={faHtml5} className="w-3 h-3" /> JavaScript</div>
+                {["React", "Tailwind", "Css", "Express"].map((data, index)=> <FinalTag name={data} key={index} />)}
               </div>
               <div className="tracking-wide text-gray-400">{item.description}</div>
             </div>

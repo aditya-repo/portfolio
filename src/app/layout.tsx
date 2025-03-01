@@ -27,10 +27,13 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <div className="mx-auto container max-w-[1200px]">
-        <Header children />
-        <div className="h-[0.25px] border-b-[0.1px] border-gray-800 text-white"></div>
-        {children}
+          <Header children />
+          <div className="h-[0.25px] border-b-[0.1px] border-gray-800 text-white"></div>
+          {children}
+
         </div>
+          <div className="pt-10 text-center">Built with Next.js & Typescript. Hosted on Vercel.</div>
+          <div className="pb-6 pt-3 text-center text-sm text-gray-400">© 2025 Aditya Raj. All Rights Reserved.</div>
       </body>
     </html>
   );
