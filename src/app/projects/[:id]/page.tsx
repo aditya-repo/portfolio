@@ -104,7 +104,7 @@ const DynamicProjectRenderer: React.FC = () => {
             {section.type === "image" && section.images && (
               <div className="grid grid-cols-2 gap-4">
                 {section.images.map((img, i) => (
-                  <img key={i} src={img.src} alt={img.alt || `Image ${i + 1}`} className="rounded-lg shadow-lg w-full" />
+                  <Image key={i} src={img.src} alt={img.alt || `Image ${i + 1}`} className="rounded-lg shadow-lg w-full" />
                 ))}
               </div>
             )}

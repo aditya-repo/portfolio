@@ -63,5 +63,5 @@ function ProjectsComponent({ item }: { item: Iprojects }) {
     )
 }
 
-// ProjectsComponent.displayName = "Projects";
+ProjectsComponent.displayName = "Projects";
 export default ProjectsComponent;
