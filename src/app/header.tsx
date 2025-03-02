@@ -21,11 +21,11 @@ export default function Header() {
         </div>
         <button className="md:hidden text-white text-2xl focus:outline-none" onClick={() => setIsOpen(!isOpen)}>☰</button>
         <div
-          className={`absolute md:static top-16 left-0 w-full md:w-auto bg-slate-900 md:bg-transparent transition-all duration-300 ${isOpen ? "block" : "hidden"} md:flex`} >
-          <div className="flex md:flex-row flex-col gap-4 items-center px-4">
+          className={`absolute md:static top-16 left-0 w-full md:w-auto bg-gray-950 md:bg-transparent transition-all duration-300 ${isOpen ? "block" : "hidden"} md:flex`} >
+          <div className="flex md:flex-row flex-col gap-4 items-start md:items-center py-4">
             {nav.map((item, index) => (
               <div key={index} className="font-bold px-3">
-                <a href={item.link} className="text-white hover:underline">
+                <a href={item.link} className="text-white hover:underline pl-7 md:pl-0">
                   {item.name}
                 </a>
               </div>

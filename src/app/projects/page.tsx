@@ -53,8 +53,8 @@ export default function About() {
     }
 
     return (
-        <div className="py-10">
-            <h1 className="text-6xl font-bold pt-16 pb-6">Projects</h1>
+        <div className="md:py-10 py-6 px-5">
+            <h1 className="text-6xl font-bold md:pt-16 pb-6">Projects</h1>
             <p>I love building projects and practice my engineering skills, here&apos;s an archive of things that I&apos;ve worked on.</p>
             <div className="flex items-center">
                 <input type="text" placeholder="Type project name..." onChange={searchProjects} className="bg-transparent border border-gray-300 py-2 pl-4 my-3 w-[300px] outline-none rounded-l-lg border-r-0 " />

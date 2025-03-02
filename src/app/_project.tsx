@@ -57,7 +57,7 @@ function ProjectsComponent({ item }: { item: Iprojects }) {
               <Link href={"https://aditya-repo.github.io/abstract/"}><div className="font-bold text-2xl"><FontAwesomeIcon icon={faExternalLink} className="w-4 h-4" /></div></Link>
             </div>
             <div className="tech-stack">
-              <div className="flex gap-2 py-3 mb-3 border-b border-gray-600">
+              <div className="flex  flex-wrap gap-2 py-3 mb-3 border-b border-gray-600">
                 {["React", "Tailwind", "Css", "Express"].map((data, index)=> <FinalTag name={data} key={index} />)}
               </div>
               <div className="tracking-wide text-gray-400">{item.description}</div>

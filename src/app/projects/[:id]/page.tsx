@@ -60,7 +60,7 @@ const DynamicProjectRenderer: React.FC = () => {
         <Image src={jsonData.mainImage} alt="Project Image" width={800} height={400} className="rounded-lg w-full" />
       </div>
 
-      <h1 className="font-bold text-5xl py-4">{jsonData.title}</h1>
+      <h1 className="font-bold text-3xl md:text-5xl pb-3 pt-6 ">{jsonData.title}</h1>
       <p className="text-gray-400">{jsonData.description}</p>
 
       <div className="flex gap-10 mt-4 pb-3 mb-4 items-center border-b border-gray-800">
@@ -104,7 +104,7 @@ const DynamicProjectRenderer: React.FC = () => {
             {section.type === "image" && section.images && (
               <div className="grid grid-cols-2 gap-4">
                 {section.images.map((img, i) => (
-                  <Image key={i} src={img.src} alt={img.alt || `Image ${i + 1}`} className="rounded-lg shadow-lg w-full" />
+                  <Image width={400} height={320} key={i} src={img.src} alt={img.alt || `Image ${i + 1}`} className="rounded-lg shadow-lg w-full" />
                 ))}
               </div>
             )}
