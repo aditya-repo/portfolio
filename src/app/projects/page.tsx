@@ -15,25 +15,25 @@ export type Iprojects = {
 const projectsData: Iprojects[] = [
     {
         title: "Portfolio 1 ",
-        description: "A website that provides roadmap for various fields in Programming and help people learn to code for free.",
+        description: "A website 1 that provides roadmap for various fields in Programming and help people learn to code for free.",
         image: "",
         link: "https://github.com/aditya-repo/portfolio"
     },
     {
         title: "Portfolio 2 ",
-        description: "A website that provides roadmap for various fields in Programming and help people learn to code for free.",
+        description: "A website 2 that provides roadmap for various fields in Programming and help people learn to code for free.",
         image: "",
         link: "https://github.com/aditya-repo/portfolio"
     },
     {
         title: "Portfolio 3",
-        description: "A website that provides roadmap for various fields in Programming and help people learn to code for free.",
+        description: "A website 3 that provides roadmap for various fields in Programming and help people learn to code for free.",
         image: "",
         link: "https://github.com/aditya-repo/portfolio"
     },
     {
         title: "Portfolio 4",
-        description: "A website that provides roadmap for various fields in Programming and help people learn to code for free.",
+        description: "A website 4 that provides roadmap for various fields in Programming and help people learn to code for free.",
         image: "",
         link: "https://github.com/aditya-repo/portfolio"
     }
