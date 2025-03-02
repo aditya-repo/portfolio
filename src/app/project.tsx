@@ -19,14 +19,14 @@ const tagConfig:TagDictonary = {
   css: { bg: "bg-pink-100", text: "text-pink-600", icon: faCss3Alt },
 };
 
-const DynamicTag = (Component: React.FC<TagProps>)=> ({name}: {name: string}) => {
-  const tag = tagConfig[name.toLowerCase()];
-  if (!tag) return <Component name={name} bg={"bg-blue-100"} icon={faFaceDizzy} text={"bg-blue-100"} />
+const DynamicTag = (Component: React.FC<TagProps>) => {
+  return ({ name }: { name: string }) => {
+    const tag = tagConfig[name.toLowerCase()];
+    if (!tag) return <Component name={name} bg={"bg-blue-100"} icon={faFaceDizzy} text={"bg-blue-100"} />;
 
-  return (
-    <Component name={name} bg={tag.bg} icon={tag.icon} text={tag.text} />
-  )
-}
+    return <Component name={name} bg={tag.bg} icon={tag.icon} text={tag.text} />;
+  };
+};
 
 const Tag = ({ name, bg, icon, text }: TagProps) => {
   return (
