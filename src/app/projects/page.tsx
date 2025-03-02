@@ -2,7 +2,7 @@
 
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Projects from "../_project";
+import Projects from "../project";
 import { useEffect, useState } from "react";
 
 export type Iprojects = {

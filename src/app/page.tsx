@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub} from '@fortawesome/free-brands-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope,  faNewspaper } from '@fortawesome/free-solid-svg-icons';
-import Projects from "./_project";
+import Projects from "./project";
 
 export default function Home() {
   const Iprojects = [
