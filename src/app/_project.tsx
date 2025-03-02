@@ -20,12 +20,16 @@ const tagConfig:TagDictonary = {
 };
 
 const DynamicTag = (Component: React.FC<TagProps>) => {
-  return ({ name }: { name: string }) => {
+  const WrappedComponent = ({ name }: { name: string }) => {
     const tag = tagConfig[name.toLowerCase()];
     if (!tag) return <Component name={name} bg={"bg-blue-100"} icon={faFaceDizzy} text={"bg-blue-100"} />;
 
     return <Component name={name} bg={tag.bg} icon={tag.icon} text={tag.text} />;
   };
+
+  WrappedComponent.displayName = `DynamicTag(${Component.displayName || "Tag"})`; // ✅ Assign display name
+
+  return WrappedComponent;
 };
 
 const Tag = ({ name, bg, icon, text }: TagProps) => {
