@@ -39,7 +39,7 @@ const Tag = ({ name, bg, icon, text }: TagProps) => {
 
 const FinalTag = DynamicTag(Tag);
 
-export default function Projects({ item }: { item: Iprojects }) {
+function ProjectsComponent({ item }: { item: Iprojects }) {
     return (
         <div className="p-2">
           <div className="rounded">
@@ -62,3 +62,6 @@ export default function Projects({ item }: { item: Iprojects }) {
         </div>
     )
 }
+
+// ProjectsComponent.displayName = "Projects";
+export default ProjectsComponent;

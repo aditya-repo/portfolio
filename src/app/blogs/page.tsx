@@ -1,6 +1,5 @@
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { read } from "fs";
 import Link from "next/link";
 
 export interface ILink {

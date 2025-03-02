@@ -45,7 +45,7 @@ export default function About() {
         setProjects(projectsData);
     }, [])
 
-    const searchProjects = (event: any) => {
+    const searchProjects = (event: React.ChangeEvent<HTMLInputElement>) => {
         
         const data = projectsData.filter((item) => item.title.trim().toLowerCase().includes(event.target.value.toLowerCase()))
         
