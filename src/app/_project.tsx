@@ -50,11 +50,11 @@ function ProjectsComponent({ item }: { item: Iprojects }) {
     return (
         <div className="p-2">
           <div className="rounded">
-          <Link href={`/projects/${item.slug}/?id=${item.id}`}><Image src={item.mainImage} width={400} height={400} alt="Profile Picture" className="rounded-t-lg w-[100%]" /></Link>
+          <Link href={`/projects/${item.slug}`}><Image src={item.mainImage} width={400} height={400} alt="Profile Picture" className="rounded-t-lg w-[100%]" /></Link>
           </div>
           <div className="p-3 bg-gray-900 rounded-b-lg">
             <div className="flex justify-between items-center">
-            <Link href={`/projects/${item.slug}/?id=${item.id}`}>
+            <Link href={`/projects/${item.slug}`}>
               <div className="font-bold text-2xl">{item.title}</div></Link>
               <Link target="_blank" href={item.hostedUrl}><div className="font-bold text-2xl"><FontAwesomeIcon icon={faExternalLink} className="w-4 h-4" /></div></Link>
             </div>

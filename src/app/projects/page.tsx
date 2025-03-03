@@ -6,7 +6,7 @@ import Projects from "../_project";
 import { useEffect, useState } from "react";
 import data from "../../lib/project.json";
 
-export type Iprojects = {
+export interface Iprojects  {
     id: number;
     slug: string;
     title: string;

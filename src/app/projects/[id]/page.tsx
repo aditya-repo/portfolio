@@ -4,18 +4,22 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 import { faSquareGithub } from "@fortawesome/free-brands-svg-icons";
 import projectdata from "../../../lib/project.json";
+import { Iprojects } from "../page";
 
 interface Props {
-  searchParams: {
-    id?: string;  // id might be undefined
-  };
+  params: { id: string };
 }
 
 
-const DynamicProjectRenderer = ({ searchParams }: Props) => {
-  const id = searchParams.id ? parseInt(searchParams.id) : 1;
+const DynamicProjectRenderer = ({ params }: Props) => {
 
-  const data = projectdata[id - 1];
+   let data = projectdata.find((item: Iprojects) => item.slug === params.id) ;
+  
+   if (!data) {
+    return <div>Project Not Found</div>;
+  }
+   
+
 
   return (
     <div className="p-5 max-w-5xl mx-auto">
