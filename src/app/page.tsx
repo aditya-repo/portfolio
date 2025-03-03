@@ -9,33 +9,6 @@ import Projects from "./_project";
 import projectdata from "../lib/project.json";
 
 export default function Home() {
-  const Iprojects = [
-      {
-          title: "Portfolio",
-          description: "A website that provides roadmap for various fields in Programming and help people learn to code for free.",
-          image: "",
-          link: "https://github.com/aditya-repo/portfolio"
-      },
-      {
-          title: "Portfolio",
-          description: "A website that provides roadmap for various fields in Programming and help people learn to code for free.",
-          image: "",
-          link: "https://github.com/aditya-repo/portfolio"
-      },
-      {
-          title: "Portfolio",
-          description: "A website that provides roadmap for various fields in Programming and help people learn to code for free.",
-          image: "",
-          link: "https://github.com/aditya-repo/portfolio"
-      },
-      {
-          title: "Portfolio",
-          description: "A website that provides roadmap for various fields in Programming and help people learn to code for free.",
-          image: "",
-          link: "https://github.com/aditya-repo/portfolio"
-      }
-  ]
-
 
   return (
     <div className="content">

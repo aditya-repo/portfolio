@@ -5,29 +5,6 @@ import { faLink } from "@fortawesome/free-solid-svg-icons";
 import { faSquareGithub } from "@fortawesome/free-brands-svg-icons";
 import projectdata from "../../../lib/project.json";
 
-interface Section {
-  type: "markdown" | "text" | "list" | "ordered_list" | "image";
-  title?: string;
-  content?: string;
-  items?: string[];
-  images?: { src: string; alt?: string }[];
-}
-
-export interface ILink {
-  name: string
-  link: string
-}
-
-
-interface ProjectData {
-  title: string;
-  mainImage: string;
-  description: string;
-  githubUrl: string;
-  hostedUrl: string;
-  tags: string[];
-  sections: Section[];
-}
 
 const DynamicProjectRenderer = ({searchParams}: {searchParams: {id: string}}) => {
 
