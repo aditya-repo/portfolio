@@ -6,19 +6,22 @@ import { faSquareGithub } from "@fortawesome/free-brands-svg-icons";
 import projectdata from "../../../lib/project.json";
 import { Iprojects } from "../page";
 
-interface Props {
-  params: { id: string };
-}
+
+const DynamicProjectRenderer = async ({
+  params,
+}: {
+  params: Promise<{ id: string }>
+}) => {
+
+  const { id } = await params
 
 
-const DynamicProjectRenderer = ({ params }: Props) => {
+  const data = projectdata.find((item: Iprojects) => item.slug === id);
 
-   const data = projectdata.find((item: Iprojects) => item.slug === params.id) ;
-  
-   if (!data) {
+  if (!data) {
     return <div>Project Not Found</div>;
   }
-   
+
 
 
   return (
