@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 import { faSquareGithub } from "@fortawesome/free-brands-svg-icons";
 import projectdata from "../../../lib/project.json";
-import  PageProps  from "next";
 
 interface Props {
   searchParams: {
