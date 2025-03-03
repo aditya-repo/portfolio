@@ -6,6 +6,7 @@ import { faGithub} from '@fortawesome/free-brands-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope,  faNewspaper } from '@fortawesome/free-solid-svg-icons';
 import Projects from "./_project";
+import projectdata from "../lib/project.json";
 
 export default function Home() {
   const Iprojects = [
@@ -94,8 +95,8 @@ export default function Home() {
           <Link href="/projects" className="text-[#3CCF91] text-xl">View all projects →</Link>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <Projects item={Iprojects[0]} />
-          <Projects item={Iprojects[1]} />
+          <Projects item={projectdata[0]} />
+          <Projects item={projectdata[1]} />
         </div>
       </div>
 

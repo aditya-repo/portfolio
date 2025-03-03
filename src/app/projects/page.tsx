@@ -4,40 +4,33 @@ import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Projects from "../_project";
 import { useEffect, useState } from "react";
+import data from "../../lib/project.json";
 
 export type Iprojects = {
+    id: number;
+    slug: string;
     title: string;
     description: string;
-    image: string;
-    link: string;
-}
+    mainImage: string;
+    hostedUrl: string;
+    githubUrl: string;
+    tags: string[];
+    sections: Section[];
+  };
+  
+  type Section =
+    | { type: string; title: string; content: string }
+    | { type: string; title: string; items: string[] }
+    | { type: string; title: string; items: string[] }
+    | { type: string; title: string; images: Image[] };
+  
+  type Image = {
+    src: string;
+    alt: string;
+  };
+  
 
-const projectsData: Iprojects[] = [
-    {
-        title: "Portfolio 1 ",
-        description: "A website 1 that provides roadmap for various fields in Programming and help people learn to code for free.",
-        image: "",
-        link: "https://github.com/aditya-repo/portfolio"
-    },
-    {
-        title: "Portfolio 2 ",
-        description: "A website 2 that provides roadmap for various fields in Programming and help people learn to code for free.",
-        image: "",
-        link: "https://github.com/aditya-repo/portfolio"
-    },
-    {
-        title: "Portfolio 3",
-        description: "A website 3 that provides roadmap for various fields in Programming and help people learn to code for free.",
-        image: "",
-        link: "https://github.com/aditya-repo/portfolio"
-    },
-    {
-        title: "Portfolio 4",
-        description: "A website 4 that provides roadmap for various fields in Programming and help people learn to code for free.",
-        image: "",
-        link: "https://github.com/aditya-repo/portfolio"
-    }
-]
+const projectsData: Iprojects[] = data
 
 export default function About() {
     const [projects, setProjects] = useState<Iprojects[]>([]);

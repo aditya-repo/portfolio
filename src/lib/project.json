@@ -1,0 +1,167 @@
+[
+    {   "id": 1,
+        "slug": "webcampus-institution-manager",
+        "title": "Webcampus - Institute Manager",
+        "description": "A stop solution to create, host & managable unlimited institution or college website application using nodejs and mongoDB",
+        "mainImage": "/webcampus/webcampus-1.png",
+        "hostedUrl": "https://rpscollegeharnaut.com",
+        "githubUrl": "https://github.com/aditya-repo/webcampus",
+        "tags": [
+            "NodeJs",
+            "ejs",
+            "express",
+            "mongoDB",
+            "Backend"
+        ],
+        "sections": [
+            {
+                "type": "text",
+                "title": "Overview",
+                "content": "Webcampus - Institute Manager is developed on nodejs backend runtime using javascript. It is open-sourced hosted on github. The application is server side rendered using [ejs] template engine. The database is hosted on mongodb cloud."
+            },
+            {
+                "type": "list",
+                "title": "Key Features",
+                "items": [
+                    "Zero code application controlled by dashboard panel",
+                    "Website color customization",
+                    "Notice and Calender management",
+                    "Gallery management with folder creation",
+                    "Custom control navigation bar and footer",
+                    "Text editor for page content",
+                    "Secure login credentials for dashbaord",
+                    "Can servers multiple thousand different institute application",
+                    "Some image for references for better understanding"
+                ]
+            },
+            {
+                "type": "ordered_list",
+                "title": "Some hosted college applications are:",
+                "items": [
+                    "R.P.S College Harnaut as [https://rpscollegeharnaut.com]",
+                    "S.P. VERMA College as [https://spvermacollege.in]",
+                    "B.R.S.Y College as [https://brsy.co.in]",
+                    "B.R.Degree College as [https://brdegreecollege.in]",
+                    "L.P. Shahi College as [https://lpshahicollege.co.in]",
+                    "R.L.S. Y. Biharsharif College as [https://rlsybiharsharif.com]"
+                ]
+            },
+            {
+                "type": "image",
+                "title": "Screenshots",
+                "images": [
+                    {
+                        "src": "/webcampus/webcampus-9.png",
+                        "alt": "Screenshot 1"
+                    },
+                    {
+                        "src": "/webcampus/webcampus-2.png",
+                        "alt": "Screenshot 2"
+                    }
+                ]
+            },
+            {
+                "type": "ordered_list",
+                "title": "Dashboard Setup",
+                "items": [
+                    "Access the Dashboard by provided credentials",
+                    "Checkout the dashboard panel",
+                    "explore the features like gallery, notice, calender, header link and many more pages."
+                ]
+            },
+            {
+                "type": "image",
+                "title": "Screenshots",
+                "images": [
+                    {
+                        "src": "/webcampus/webcampus-10.png",
+                        "alt": "Screenshot 1"
+                    },
+                    {
+                        "src": "/webcampus/webcampus-3.png",
+                        "alt": "Screenshot 2"
+                    },
+                    {
+                        "src": "/webcampus/webcampus-4.png",
+                        "alt": "Screenshot 3"
+                    },
+                    {
+                        "src": "/webcampus/webcampus-5.png",
+                        "alt": "Screenshot 4"
+                    },
+                    {
+                        "src": "/webcampus/webcampus-6.png",
+                        "alt": "Screenshot 4"
+                    },
+                    {
+                        "src": "/webcampus/webcampus-7.png",
+                        "alt": "Screenshot 4"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "slug": "webcampus-institution-manager",
+        "title": "Webcampus - Institute Manager",
+        "description": "A stop solution to create, host & managable unlimited institution or college website application using nodejs and mongoDB",
+        "mainImage": "/webcampus/webcampus-1.png",
+        "hostedUrl": "https://rpscollegeharnaut.com",
+        "githubUrl": "https://github.com/aditya-repo/webcampus",
+        "tags": [
+            "NodeJs",
+            "ejs",
+            "express",
+            "mongoDB",
+            "Backend"
+        ],
+        "sections": [
+            {
+                "type": "text",
+                "title": "Overview",
+                "content": "This section contains plain text content."
+            },
+            {
+                "type": "list",
+                "title": "Key Features",
+                "items": [
+                    "Feature 1",
+                    "Feature 2",
+                    "Feature 3"
+                ]
+            },
+            {
+                "type": "ordered_list",
+                "title": "Setup Steps",
+                "items": [
+                    "Step 1",
+                    "Step 2",
+                    "Step 3"
+                ]
+            },
+            {
+                "type": "image",
+                "title": "Screenshots",
+                "images": [
+                    {
+                        "src": "/project.webp",
+                        "alt": "Screenshot 1"
+                    },
+                    {
+                        "src": "/project.webp",
+                        "alt": "Screenshot 2"
+                    },
+                    {
+                        "src": "/project.webp",
+                        "alt": "Screenshot 3"
+                    },
+                    {
+                        "src": "/project.webp",
+                        "alt": "Screenshot 4"
+                    }
+                ]
+            }
+        ]
+    }
+]

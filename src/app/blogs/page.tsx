@@ -4,8 +4,8 @@ import Link from "next/link";
 
 export interface ILink {
     title: string;
-    link: string;
     description: string;
+    link: string;
     readTime: string;
     date: string
 }
