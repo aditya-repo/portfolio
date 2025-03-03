@@ -13,7 +13,7 @@ interface Props {
 
 const DynamicProjectRenderer = ({ params }: Props) => {
 
-   let data = projectdata.find((item: Iprojects) => item.slug === params.id) ;
+   const data = projectdata.find((item: Iprojects) => item.slug === params.id) ;
   
    if (!data) {
     return <div>Project Not Found</div>;
