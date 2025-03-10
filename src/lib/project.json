@@ -103,41 +103,49 @@
     },
     {
         "id": 2,
-        "slug": "webcampus-institution-manager",
-        "title": "Webcampus - Institute Manager",
-        "description": "A stop solution to create, host & managable unlimited institution or college website application using nodejs and mongoDB",
-        "mainImage": "/webcampus/webcampus-1.png",
-        "hostedUrl": "https://rpscollegeharnaut.com",
-        "githubUrl": "https://github.com/aditya-repo/webcampus",
+        "slug": "flipkart-clone",
+        "title": "Flipkart UI Clone",
+        "description": "A Flipkart ui clone using ReactJs and tailwind css, with some basic features like add to cart, remove from cart and checkout using context hooks. Basic backend implemented using nodejs and mongoDB for User Management.",
+        "mainImage": "/flipakrt/1.png",
+        "hostedUrl": "flipkart-clone-mocha.vercel.app",
+        "githubUrl": "https://github.com/aditya-repo/shopme",
         "tags": [
-            "NodeJs",
-            "ejs",
+            "ReactJs",
+            "TailwindCss",
             "express",
             "mongoDB",
-            "Backend"
+            "Frontend"
         ],
         "sections": [
             {
                 "type": "text",
                 "title": "Overview",
-                "content": "This section contains plain text content."
+                "content": "Flipkart UI Clone deals with ReactJs and tailwind css, with some basic features like add to cart, remove from cart and checkout using context hooks. Basic backend implemented using nodejs and mongoDB for User Management."
             },
             {
                 "type": "list",
                 "title": "Key Features",
                 "items": [
-                    "Feature 1",
-                    "Feature 2",
-                    "Feature 3"
+                    "User Authentication using axios",
+                    "Responsive design using tailwind css",
+                    "React Hooks Like Context abd Reducer to implement Cart management",
+                    "React Router including protected routes",
+                    "Wishlist implementation",
+                    "Checkout page",
+                    "External api for product listing"
                 ]
             },
             {
                 "type": "ordered_list",
                 "title": "Setup Steps",
                 "items": [
-                    "Step 1",
-                    "Step 2",
-                    "Step 3"
+                    "Home Page",
+                    "Product Listing Page",
+                    "Product Details Page",
+                    "Cart Page",
+                    "Wishlist Page",
+                    "Checkout Page",
+                    "Basic Profile Page"
                 ]
             },
             {
@@ -145,20 +153,28 @@
                 "title": "Screenshots",
                 "images": [
                     {
-                        "src": "/project.webp",
-                        "alt": "Screenshot 1"
-                    },
-                    {
-                        "src": "/project.webp",
+                        "src": "/flipkart/2.png",
                         "alt": "Screenshot 2"
                     },
                     {
-                        "src": "/project.webp",
+                        "src": "/flipkart/3.png",
                         "alt": "Screenshot 3"
                     },
                     {
-                        "src": "/project.webp",
+                        "src": "/flipkart/4.png",
                         "alt": "Screenshot 4"
+                    },
+                    {
+                        "src": "/flipkart/5.png",
+                        "alt": "Screenshot 5"
+                    },
+                    {
+                        "src": "/flipkart/6.png",
+                        "alt": "Screenshot 6"
+                    },
+                    {
+                        "src": "/flipkart/7.png",
+                        "alt": "Screenshot 7"
                     }
                 ]
             }
