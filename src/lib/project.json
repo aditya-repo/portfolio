@@ -106,7 +106,7 @@
         "slug": "flipkart-clone",
         "title": "Flipkart UI Clone",
         "description": "A Flipkart ui clone using ReactJs and tailwind css, with some basic features like add to cart, remove from cart and checkout using context hooks. Basic backend implemented using nodejs and mongoDB for User Management.",
-        "mainImage": "/flipakrt/1.png",
+        "mainImage": "/flipkart/1.png",
         "hostedUrl": "flipkart-clone-mocha.vercel.app",
         "githubUrl": "https://github.com/aditya-repo/shopme",
         "tags": [
