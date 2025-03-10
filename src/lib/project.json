@@ -1,8 +1,67 @@
 [
     {   "id": 1,
+        "slug": "weddin-planner",
+        "title": "Weddin Planner",
+        "description": "Wedding planner is a simple app to plan a wedding. This platform intergrate the vendors and clients at the comfort of your home.",
+        "mainImage": "/weddinplanner/5.png",
+        "hostedUrl": "https://weddinplanner2.vercel.app/",
+        "githubUrl": "https://github.com/aditya-repo/weddinplanner",
+        "tags": [
+            "Nextjs",
+            "Typescript",
+            "TailwindCss",
+            "Express",
+            "Full Stack"
+        ],
+        "sections": [
+            {
+                "type": "text",
+                "title": "Overview",
+                "content": "Weddin Planner is a Next.js TypeScript-based platform designed to streamline wedding planning. It efficiently manages vendors, clients, venues, and photographers, ensuring seamless coordination. With an intuitive interface, it simplifies bookings, communication, and event organization, making wedding planning stress-free and efficient for both planners and couples. "
+            },
+            {
+                "type": "list",
+                "title": "Key Features",
+                "items": [
+                    "Vendor Signup and Login",
+                    "Client Signup and Login",
+                    "Responsive design",
+                    "Bookings and communication"
+                ]
+            },
+
+            {
+                "type": "image",
+                "title": "Screenshots",
+                "images": [
+                    {
+                        "src": "/weddinplanner/1.png",
+                        "alt": "Screenshot 2"
+                    },
+                    {
+                        "src": "/weddinplanner/2.png",
+                        "alt": "Screenshot 2"
+                    },
+                    {
+                        "src": "/weddinplanner/3.png",
+                        "alt": "Screenshot 3"
+                    },
+                    {
+                        "src": "/weddinplanner/4.png",
+                        "alt": "Screenshot 4"
+                    },
+                    {
+                        "src": "/weddinplanner/6.png",
+                        "alt": "Screenshot 5"
+                    }
+                ]
+            }
+        ]
+    },
+    {   "id": 2,
         "slug": "webcampus-institution-manager",
         "title": "Webcampus - Institute Manager",
-        "description": "A stop solution to create, host & managable unlimited institution or college website application using nodejs and mongoDB",
+        "description": "A one stop solution to create, host & managable unlimited institution or college website application using nodejs and mongoDB",
         "mainImage": "/webcampus/webcampus-1.png",
         "hostedUrl": "https://rpscollegeharnaut.com",
         "githubUrl": "https://github.com/aditya-repo/webcampus",
@@ -102,7 +161,7 @@
         ]
     },
     {
-        "id": 2,
+        "id": 3,
         "slug": "flipkart-clone",
         "title": "Flipkart UI Clone",
         "description": "A Flipkart ui clone using ReactJs and tailwind css, with some basic features like add to cart, remove from cart  using context hooks.",
