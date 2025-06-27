@@ -4,7 +4,7 @@
         "title": "Weddin Planner",
         "description": "Wedding planner is a simple app to plan a wedding. This platform intergrate the vendors and clients at the comfort of your home.",
         "mainImage": "/weddinplanner/5.png",
-        "hostedUrl": "https://weddinplanner2.vercel.app/",
+        "hostedUrl": "https://weddinplanner.adityadesk.com/",
         "githubUrl": "https://github.com/aditya-repo/weddinplanner",
         "tags": [
             "Nextjs",
@@ -166,7 +166,7 @@
         "title": "Flipkart UI Clone",
         "description": "A Flipkart ui clone using ReactJs and tailwind css, with some basic features like add to cart, remove from cart  using context hooks.",
         "mainImage": "/flipkart/1.png",
-        "hostedUrl": "flipkart-clone-mocha.vercel.app",
+        "hostedUrl": "https://flipkart.adityadesk.com/",
         "githubUrl": "https://github.com/aditya-repo/shopme",
         "tags": [
             "ReactJs",
@@ -234,6 +234,44 @@
                     {
                         "src": "/flipkart/7.png",
                         "alt": "Screenshot 7"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "slug": "semesterwala",
+        "title": "Semesterwala UI",
+        "description": "Semesterwala is your one-stop education partner, dedicated to helping students across Bihar find the right college after Class 12.",
+        "mainImage": "/semesterwala/1.png",
+        "hostedUrl": "https://semesterwala.adityadesk.com",
+        "githubUrl": "https://github.com/aditya-repo/semesterwala",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JAvaScript",
+            "Bootstrap",
+            "Frontend"
+        ],
+        "sections": [
+            {
+                "type": "text",
+                "title": "Overview",
+                "content": "These are plane html file with bootstrap and css implementation."
+            },
+            
+            {
+                "type": "image",
+                "title": "Screenshots",
+                "images": [
+                    {
+                        "src": "/semesterwala/2.png",
+                        "alt": "Screenshot 2"
+                    },
+                    {
+                        "src": "/semesterwala/3.png",
+                        "alt": "Screenshot 3"
                     }
                 ]
             }

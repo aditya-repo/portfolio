@@ -28,13 +28,13 @@ export default function Home() {
               <div className="font-bold">Github</div>
             </div>
           </Link>
-          <Link href="https://www.linkedin.com/in/aditya-raj-388002346" target="_blank">
+          <Link href="https://www.linkedin.com/in/aditya99-dev" target="_blank">
             <div className="flex bg-gray-900 py-2 px-3 rounded-md items-center">
               <FontAwesomeIcon icon={faLinkedin} className="w-4 h-4 mr-2.5 text-[#3CCF91]" />
               <div className="font-bold">LinkedIn</div>
             </div>
           </Link>
-          <Link href="adityaraj6220@gmail.com" target="_blank">
+          <Link href="mailto:adityaraj6220@gmail.com" target="_blank">
             <div className="flex bg-gray-900 py-2 px-3 rounded-md items-center">
               <FontAwesomeIcon icon={faEnvelope} className="w-4 h-4 mr-2.5 text-[#3CCF91]" />
               <div className="font-bold">Email</div>
@@ -53,7 +53,7 @@ export default function Home() {
               I&apos;m interested in building something awesome with code and automate tasks with code, currently focused on Web & Mobile Development,
               Open Source
               and Competitive Programming</p>
-            <p className="text-gray-400 mt-6">When I&apos;m not coding I listen to music with my friends, watch some show on Netflix, or if the weather&apos;s good, play badminton! 🏀</p>
+            <p className="text-gray-400 mt-6">When I&apos;m not coding I listen to music with my friends, watch some show on Netflix, or if the weather&apos;s good, play badminton! </p>
           </div>
           <div className="w-1/2 flex justify-center my-8">
             <Image src={ProfilePic} alt="Profile Picture" className="rounded-full" />

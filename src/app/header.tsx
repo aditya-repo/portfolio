@@ -1,4 +1,5 @@
 'use client'
+import Link from "next/link";
 import { useState } from "react";
 
 export default function Header() {
@@ -17,7 +18,9 @@ export default function Header() {
     <div className="sticky top-0 bg-[#0a0a0a]">
       <div className="flex justify-between items-center px-6 py-5 sticky top-0 self-start">
         <div className="logo">
+          <Link href="/">
           <h1 className="text-3xl font-extrabold">{'{Aditya}'}</h1>
+          </Link>
         </div>
         <button className="md:hidden text-white text-2xl focus:outline-none" onClick={() => setIsOpen(!isOpen)}>☰</button>
         <div
