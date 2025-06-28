@@ -47,12 +47,7 @@ export default function Home() {
           <div className="md:w-1/2">
             <div className="font-bold text-3xl pb-4 md:text-left text-center"><span className="hidden md:inline">⚡ </span>About Me</div>
             <p className="text-gray-400">Hey! I&apos;m Aditya Raj, I&apos;ve been close to a computer since an early age, and been passionate about it ever since.</p>
-            <p className="text-gray-400 mt-6">I really liked to build stuff using no-code tools
-              back in 2010, and from that, I explored how to code myself, fast-forward to today, I do programming in various languages and technologies, and had the privilege to worked in a Recruitment Company
-              and a SaaS Company
-              I&apos;m interested in building something awesome with code and automate tasks with code, currently focused on Web & Mobile Development,
-              Open Source
-              and Competitive Programming</p>
+            <p className="text-gray-400 mt-6">I fell into coding by curiosity—starting with PHP and tinkering in CodeIgniter just to see how things worked. One project led to another, and soon I was building full-stack apps with Node.js, React, and Next.js. I love turning ideas into real, usable products—especially when I can automate, scale, and deploy them with modern tools. These days, I’m deep into Web & Mobile Development, always exploring new tech, solving real problems, and building things that feel exciting to use.</p>
             <p className="text-gray-400 mt-6">When I&apos;m not coding I listen to music with my friends, watch some show on Netflix, or if the weather&apos;s good, play badminton! </p>
           </div>
           <div className="w-1/2 flex justify-center my-8">
